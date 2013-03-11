@@ -14,8 +14,11 @@ environment.
 i.e. :
 
 $ git clone https://github.com/danielecr/ApacheAddVHost.git
+
 $ cd ApacheAddVHost
+
 $ cp bin/* ~/bin;
+
 $ export PATH=$PATH:~/bin
 
 setup a dns server and a fantastic domain .u84 (or change it in
