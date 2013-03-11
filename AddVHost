@@ -1,0 +1,26 @@
+#! /bin/sh
+
+# keep simple, stay simple, reach target on time
+
+
+ARGC=$#
+
+PARAMS=''
+
+if [ $ARGC -eq 2 ]; then
+    PARAMS="$1 $2";
+fi;
+
+if [ $ARGC -eq 1 ]; then
+    PARAMS=$1
+fi;
+
+#echo $PARAMS;
+
+sudo sh <<EOF
+
+
+/usr/bin/php /home/daniele/bin/AddHost.php $PARAMS <&1
+
+exit 0;
+EOF
