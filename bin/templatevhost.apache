@@ -6,6 +6,7 @@
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride All
+		Require all granted
 	</Directory>
 
 	ErrorLog /var/log/apache2/error.log
